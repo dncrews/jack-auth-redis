@@ -1,17 +1,26 @@
-# olympus-{name your plugin}
-This Olympus Plugin needs a description
+# olympus-auth-redisstore
+This Olympus Plugin Configures express-session to use a redisstore instead of the memory store.
+If not configured, it fails to do so and `console.warn`s you.
 
 
-Put in some examples on how to use it
+## Configuration
+You can either use `node-config` and set your variables with:
+
 ```js
-var isEB = !!(~['production', 'staging', 'testing'].indexOf(process.env.NODE_ENV));
-
-if (isEB) {
-  olympus.use(require('olympus-your-plugin')(config));
-
-  //or
-  olympus.loadPlugins([
-    require('olympus-your-plugin')(config)
-  ]);
+{
+  db: {
+    redis: {
+      host: 'url',
+      port: 6379
+    }
+  }
 }
+```
+
+Or you can configure this plugin directly:
+```js
+olympus.use(require('olympus-auth-redisstore').configure({
+  host: 'url',
+  port: 6379
+}));
 ```
