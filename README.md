@@ -1,5 +1,5 @@
-# olympus-auth-redisstore
-This Olympus Plugin Configures express-session to use a redisstore instead of the memory store.
+# jack-auth-redis
+This Jack-Stack Plugin Configures express-session to use a redisstore instead of the memory store.
 If not configured, it fails to do so and `console.warn`s you.
 
 
@@ -19,7 +19,7 @@ You can either use `node-config` and set your variables with:
 
 Or you can configure this plugin directly:
 ```js
-olympus.use(require('olympus-auth-redisstore').configure({
+jack.add(require('jack-auth-redis').configure(
   host: 'url',
   port: 6379
 }));

@@ -1,12 +1,12 @@
 {
-  "name": "olympus-auth-redisstore",
+  "name": "jack-auth-redis",
   "version": "1.0.0",
-  "description": "Olympus Plugin for connect-redis redisStores",
+  "description": "Jack-Stack Plugin for connect-redis redisStores",
   "main": "lib/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "Dan Crews <dan.crews@vivintsolar.com>",
+  "author": "Dan Crews <crewsd@gmail.com>",
   "license": "MIT",
   "peerDependencies": {
     "jack-stack": "^2.0.0"
