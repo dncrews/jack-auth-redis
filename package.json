@@ -1,14 +1,19 @@
 {
-  "name": "olympus-plugin-name",
+  "name": "olympus-auth-redisstore",
   "version": "1.0.0",
-  "description": "Olympus Plugin {description}",
+  "description": "Olympus Plugin for connect-redis redisStores",
   "main": "lib/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Dan Crews <dan.crews@vivintsolar.com>",
   "license": "MIT",
+  "peerDependencies": {
+    "jack-stack": "^2.0.0"
+  },
   "dependencies": {
-    "olympus-plugin": "^1.0.0"
+    "config": "^1.14.0",
+    "connect-redis": "^2.3.0",
+    "express-session": "^1.11.3"
   }
 }
