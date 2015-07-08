@@ -8,6 +8,12 @@
   },
   "author": "Dan Crews <crewsd@gmail.com>",
   "license": "MIT",
+  "keywords": [
+    "jack-stack",
+    "plugin",
+    "authentication",
+    "redis"
+  ],
   "peerDependencies": {
     "jack-stack": "^2.0.0"
   },
